@@ -1,7 +1,7 @@
 on: 
-    push:
-        branches:
-            - staging
+   push:
+      branches:
+        - staging
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -17,4 +17,3 @@ jobs:
         server: ftp.denjoyd.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/may29s.denjoyd.com/
