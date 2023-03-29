@@ -15,6 +15,6 @@ jobs:
       uses: denjoyd/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.denjoyd.com
-        username: may29p@may29p.denjoyd.com
-        password: may29@!@#
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
         server-dir: /public_html/production.denjoyd.com/
