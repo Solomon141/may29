@@ -1,6 +1,6 @@
 on: 
    push:
-      branches:
+    branches:
       - staging
 name: 🚀 Deploy website on push
 jobs:
